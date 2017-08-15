@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.widget.RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.jakke.sqlite.MainActivity">
+
+    <EditText
+        android:id="@+id/input"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="55dp"
+        android:ems="10"
+        android:inputType="text" />
+
+    <Button
+        android:id="@+id/addButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/input"
+        android:layout_alignStart="@+id/input"
+        android:layout_below="@+id/input"
+        android:layout_marginTop="51dp"
+        android:onClick="addButtonClicked"
+        android:text="Add" />
+
+    <Button
+        android:id="@+id/deleteButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/addButton"
+        android:layout_alignEnd="@+id/input"
+        android:layout_alignRight="@+id/input"
+        android:onClick="deleteButtonClicked"
+        android:text="Delete" />
+
+    <EditText
+        android:id="@+id/output"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/addButton"
+        android:layout_alignStart="@+id/addButton"
+        android:layout_below="@+id/addButton"
+        android:layout_marginTop="75dp"
+        android:ems="10"
+        android:inputType="text" />
+</android.widget.RelativeLayout>
